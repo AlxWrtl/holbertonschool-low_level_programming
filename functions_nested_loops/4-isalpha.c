@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- *_insalpha - checks for for alphabetic character.
+ *_isalpha - checks for for alphabetic character.
  * @c: The character to check for the lower charactere
  *
  * Return: 1 if c is lowercase 0 otherwise.
