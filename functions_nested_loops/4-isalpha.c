@@ -7,7 +7,7 @@
  *_insalpha - checks for for alphabetic character.
  * @c: The character to check for the lower charactere
  *
- * Return: 1 if c is lowercase 0 otherwise. 
+ * Return: 1 if c is lowercase 0 otherwise.
  */
 
 int _isalpha(int c)
