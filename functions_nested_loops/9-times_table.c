@@ -17,30 +17,31 @@ void times_table(void)
 
 	for (multi = 0; multi <= 9; multi++)
 	{
-		for (nbr = 0; nbr <= 9; nbr++)
+_putchar('0');
+
+		for (nbr = 1; nbr <= 9; nbr++)
 
 		{
+
 			result = multi * nbr;
+		
+		
+	_putchar(',');
+	_putchar(' ');
 
 			if (result <= 9)
 			{
-				_putchar(result + '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				_putchar(result +'0');
 			}
 			else
 			{
 				_putchar (result / 10 + '0');
 				_putchar (result % 10 + '0');
 
-				_putchar (',');
-				_putchar (' ');
 
 			}
 		}
 		_putchar ('\n');
-
 	}
 
 }
