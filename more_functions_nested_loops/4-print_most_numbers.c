@@ -14,10 +14,11 @@ void print_most_numbers(void)
 	for (nbr = 0; nbr <= 9; nbr++)
 	{
 
-		if (nbr % 2 == 0 && nbr < 5 != nbr == 0)
+		if (((nbr % 2 == 0) && (nbr < 5) != (nbr == 0)))
 		{
 
 		}
+
 
 		else
 			_putchar(nbr + '0');
