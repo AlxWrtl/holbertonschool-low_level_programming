@@ -6,6 +6,7 @@
 /**
  * _isdigit - fonction that return 1 if it's a number.
  *@c: the character to check.
+ * Return: 1 id it's digit, 0 if it's oterwise.
  */
 
 int _isdigit(int c)
