@@ -3,10 +3,10 @@
 /**
  * main - demarre la fonction
  * Return: O
-*/
+ */
 int main(void)
 {
-int n = 1;
+	int n = 1;
 
 	for (n = 1; n <= 100; n++)
 
@@ -26,7 +26,7 @@ int n = 1;
 		{
 			printf("%d ", n);
 		}
-
+			printf("\n");
 	return (0);
 
 }
