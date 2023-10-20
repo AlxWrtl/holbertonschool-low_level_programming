@@ -8,9 +8,9 @@
 
 void more_numbers(void)
 {
-	int chrf, nbr;
+	int lgn, nbr;
 
-	for (chrf = 0; chrf < 10; chrf++)
+	for (lgn = 0; lgn <= 10; lgn++)
 	{
 		for (nbr = 0; nbr <= 14; nbr++)
 		{
@@ -21,7 +21,6 @@ void more_numbers(void)
 
 			_putchar((nbr % 10) + '0');
 		}
-
 		_putchar('\n');
 	}
 }
