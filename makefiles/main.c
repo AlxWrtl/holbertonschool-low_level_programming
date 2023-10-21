@@ -8,5 +8,5 @@
 int main(void)
 {
 	print_school();
-	return (EXIT_SUCCES S);
+	return (EXIT_SUCCESS);
 }
