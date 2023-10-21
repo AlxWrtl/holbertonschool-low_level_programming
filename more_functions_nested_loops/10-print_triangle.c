@@ -9,20 +9,23 @@
 
 void print_triangle(int size)
 {
-	int Htg1, Htg2;
+	int lgn, spc, htg;
 
 	if (size > 0)
 
-		for (Htg1 = 1; Htg1 <= size ; Htg1++)
+		for (lgn = 1; lgn <= size ; lgn++)
 		{
 
-			for ((Htg2 = size - Htg1); Htg2 > 0; Htg2--)
+			for (spc = size - lgn; spc > 0; spc--)
 				_putchar(' ');
-			_putchar('#');
-			for (Htg2 = 1; Htg2 < Htg1 ; Htg2++)
-			
+
+			for (htg = lgn; htg > 0;htg--)
+
 				_putchar('#');
-			}
-			_putchar('\n');
+
+			if (lgn != size)
+				_putchar('\n');
 		}
+	_putchar('\n');
+}
 
