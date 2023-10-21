@@ -16,10 +16,9 @@ void print_triangle(int size)
 		for (Htg1 = 1; Htg1 <= size ; Htg1++)
 		{
 
-			for (Htg2 = size - Htg1; Htg2 > 0; Htg2--)
+			for ((Htg2 = size - Htg1); Htg2 > 0; Htg2--)
 				_putchar(' ');
 			_putchar('#');
-
 			for (Htg2 = 1; Htg2 < Htg1 ; Htg2++)
 			
 				_putchar('#');
