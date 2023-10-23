@@ -11,9 +11,9 @@ void print_rev(char *s)
 
 	int text, save;
 
-	for (save = 0; s[save]; save++)
+	for (save = 0; s[save] != '\0'; save++)
 	{}
-	for (text = save; text + '\1'; text--)
+	for (text = save -1; text >= 0; text--)
 	{
 		_putchar(s[text]);
 	}
