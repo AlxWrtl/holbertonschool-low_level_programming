@@ -10,18 +10,17 @@
 void rev_string(char *s)
 {
 
-	int text, save, text2;
+	int save, strt, swp;
 
 	for (save = 0; s[save] != '\0'; save++)
 	{}
-	for (text = save ; text >= 0; text--)
-	{
-		_putchar(s[text]);
-	}
-	for (text2 = text - 1; s[text2] >= 0; text--)
-	{
-		_putchar(s[text2]);
-	}
-	_putchar('\n');
-}
 
+	save = save - 1;
+
+	for (strt = 0; strt < save; save--, strt++)
+	{
+		swp = s[save];
+		s[save] = s[strt];
+		s[strt] = swp;
+	}
+}
