@@ -9,7 +9,7 @@ void puts_half(char *str)
 {
 	int save, half, print;
 
-	for (save = -1; str[save] != '\0'; save++)
+	for (save = 0; str[save] != '\0'; save++)
 	{
 
 	}
@@ -18,7 +18,7 @@ void puts_half(char *str)
 
 	for (print = half; print < save; print++)
 	{
-		_putchar(str[print]);
+		_putchar(str[print - 1]);
 	}
 
 	_putchar('\n');
