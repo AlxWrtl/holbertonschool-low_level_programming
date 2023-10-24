@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_rev - function that prints a string, in reverse.
- * @s: lenght of the string.
+ * puts2 - prints every other character of a string.
+ * @str: lenght of the string.
   */
 
 void puts2(char *str)
