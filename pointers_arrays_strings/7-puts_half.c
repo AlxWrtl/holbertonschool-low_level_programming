@@ -14,9 +14,9 @@ void puts_half(char *str)
 
 	}
 
-	half = save / 2;
+	half = save;
 
-	for (print = half; print < save; print++)
+	for (print = (half - 1) /2; print < save; print++)
 	{
 		_putchar(str[print]);
 	}
