@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 
 		if (num <= 0)
 		{
-			if (argv[i][0] != '0' || argv[i][1] != '\0')
+			if(num <= 0) 
 			{
 				printf("Error\n");
 return (1);
