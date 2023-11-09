@@ -14,7 +14,7 @@
  * and initializes each element with the specified character 'c'. If the size
  * is 0 or if the memory allocation fails, the function returns NULL.
  *
- * @Return: A pointer to the created array, or NULL on failure.
+ * Return: A pointer to the created array, or NULL on failure.
  */
 char *create_array(unsigned int size, char c)
 {
