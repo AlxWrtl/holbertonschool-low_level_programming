@@ -1,86 +1,29 @@
 #include "3-calc.h"
 
 /**
- * op_add - Adds two integers.
- * @a: The first integer.
- * @b: The second integer.
- *
- * This function returns the sum of the two integers 'a' and 'b'.
- *
- * Return: The sum of the two integers.
+ * get_op_func - selects the correct function to perform the operation
+ * @s: operator passed as argument to the program
+ * Return: pointer to the function that corresponds to the operator
  */
-
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-	return (a + b);
-}
+    op_t ops[] = {
+        {"+", op_add},
+        {"-", op_sub},
+        {"*", op_mul},
+        {"/", op_div},
+        {"%", op_mod},
+        {NULL, NULL}
+    };
+    int i = 0;
 
-/**
- * op_sub - Subtracts one integer from another.
- * @a: The first integer (minuend).
- * @b: The second integer (subtrahend).
- *
- * This function returns the result of subtracting 'b' from 'a'.
- *
- * Return: The result of the subtraction.
- */
+    while (ops[i].op)
+    {
+        if (*(ops[i].op) == *s && s[1] == '\0')
+            return (ops[i].f);
+        i++;
+    }
 
-int op_sub(int a, int b)
-{
-	return (a - b);
-}
-
-/**
- * op_mul - Multiplies two integers.
- * @a: The first integer.
- * @b: The second integer.
- *
- * This function returns the product of the two integers 'a' and 'b'.
- *
- * Return: The product of the two integers.
- */
-
-int op_mul(int a, int b)
-{
-	return (a * b);
-}
-
-/**
- * op_div - Divides one integer by another.
- * @a: The dividend.
- * @b: The divisor.
- *
- * This function returns the result of dividing 'a' by 'b'.
- *
- * Return: The result of the division.
- */
-
-int op_div(int a, int b)
-{
-	if (b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
-	return (a / b);
-}
-
-/**
- * op_mod - Returns the remainder of the division of two integers.
- * @a: The dividend.
- * @b: The divisor.
- *
- * This function returns the remainder of the division of 'a' by 'b'.
- *
- * Return: The remainder of the division.
- */
-
-int op_mod(int a, int b)
-{
-	if (b == 0)
-	{
-		printf("Error\n");
-exit(100);
-	}
-	return (a % b);
+    printf("Error\n");
+    exit(99);
 }
