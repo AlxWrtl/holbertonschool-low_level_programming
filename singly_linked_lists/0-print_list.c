@@ -5,7 +5,8 @@
  * @h: Pointer to the head of the linked list.
  *
  * This function prints the elements of the linked list, displaying the length
- * of each string and the string itself. If a string is NULL, "(nil)" is printed
+ * of each string and the string itself. If a string is NULL, "(nil)" 
+ * is printed
  * in its place. The total number of elements in the list is returned.
  *
  * Return: The number of elements in the linked list.
