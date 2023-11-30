@@ -1,5 +1,17 @@
 #include "lists.h"
 
+/**
+ * add_node_end - Adds a new node at the end of a linked list.
+ * @head: Pointer to the head of the linked list.
+ * @str: String to be stored in the new node.
+ *
+ * This function adds a new node containing a copy of the provided string to
+ * the end of the linked list. If memory allocation fails, the function returns
+ * NULL. Otherwise, it returns a pointer to the newly added node.
+ *
+ * Return: A pointer to the newly added node, or NULL on failure.
+ */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *temp;
