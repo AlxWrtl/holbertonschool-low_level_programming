@@ -50,7 +50,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(buffer);
 	close(fd);
 
-	if (bytes_written == -1 || (size_t)bytes_written < letters)
+	if (bytes_written == -1 || (size_t)bytes_written < (size_t)bytes_read)
 
 		return (0);
 
